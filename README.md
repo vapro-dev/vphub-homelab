@@ -105,7 +105,7 @@ vphub-homelab/
 │   ├── 04-proxmox-y-virtualizacion.md
 │   ├── 05-troubleshooting-y-validaciones.md
 │   ├── 06-backups-seguridad-y-roadmap.md
-│   └── 07-aprendizajes-y-presentacion.md
+│   └── 07-resultados-y-aprendizajes.md
 ├── diagrams/
 │   └── topologia-logica.mmd
 ├── examples/
