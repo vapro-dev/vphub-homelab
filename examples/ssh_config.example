@@ -1,0 +1,31 @@
+# Ejemplo público: no contiene usuarios, IPs ni llaves reales
+
+Host core-rt core-rt.lab.internal
+    HostName 10.70.10.1
+    User admin-lab
+    IdentityFile ~/.ssh/lab_ed25519
+    IdentitiesOnly yes
+
+Host hv01 hv01.lab.internal
+    HostName 10.70.10.10
+    User admin-lab
+    IdentityFile ~/.ssh/lab_ed25519
+    IdentitiesOnly yes
+
+Host nodo01 nodo01.lab.internal
+    HostName 10.70.10.20
+    User admin-lab
+    IdentityFile ~/.ssh/lab_ed25519
+    IdentitiesOnly yes
+
+Host nodo02 nodo02.lab.internal
+    HostName 10.70.10.21
+    User admin-lab
+    IdentityFile ~/.ssh/lab_ed25519
+    IdentitiesOnly yes
+
+Host nodo03 nodo03.lab.internal
+    HostName 10.70.10.22
+    User admin-lab
+    IdentityFile ~/.ssh/lab_ed25519
+    IdentitiesOnly yes

@@ -1,0 +1,20 @@
+flowchart TB
+    INTERNET((Internet))
+    ISP[Router del proveedor<br/>Red doméstica y Wi-Fi]
+    RT[core-rt.lab.internal<br/>MikroTik<br/>DHCP / DNS / NAT]
+    SW[core-sw.lab.internal<br/>Switch core]
+    HV[hv01.lab.internal<br/>Proxmox VE]
+    N1[nodo01.lab.internal<br/>Linux SBC]
+    N2[nodo02.lab.internal<br/>Linux SBC]
+    N3[nodo03.lab.internal<br/>Debian Linux]
+    ADMIN[Workstation Linux<br/>Administración]
+
+    INTERNET --> ISP
+    ISP --> RT
+    RT --> SW
+    SW --> HV
+    SW --> N1
+    SW --> N2
+    SW --> N3
+    SW --> ADMIN
+    ADMIN -. Internet cotidiano .-> ISP
